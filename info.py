@@ -76,8 +76,8 @@ URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 
      # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 30000))
-SELF_DELETE = environ.get('SELF_DELETE', FALSE)
-if SELF_DELETE == "True":
+SELF_DELETE = environ.get('SELF_DELETE',false)
+if SELF_DELETE == "false":
     SELF_DELETE = True
 
     # Download Tutorial Button #
